@@ -1,0 +1,197 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.gameBoard{
+    
+    display: grid;
+    height: 90vh;
+    width:100vw ;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns:repeat(3,auto);
+    transition: 5s ease-in-out;
+    transition-delay: 20s;
+
+    
+    
+}
+
+.gameBoard{
+    display:none;
+}
+.cell{
+    width:100px;
+    height: 100px;
+    background: black;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5s ease;
+    box-shadow: 10px 15px 10px rgba(0,0,0.9);
+    
+}
+
+.gameIntro{
+    background: black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    transition: 2s ease;
+  
+    
+}
+
+/*.gameIntro,.animate{
+    animation: myAnimation 2s ease;
+}
+
+*/
+.gameIntro > h2{
+    padding-bottom: 30px;
+    font-size: 3.5em;
+    font-family: Comic Sans MS;
+}
+
+.gameIntro > button{
+    border: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+    animation: myAnimation 3s ease infinite;
+    
+}
+
+.head{
+    display:none;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3em;
+    font-family: Times New Roman;
+    font-weight: bold;
+    transition: 5s ease-in;
+    transition-delay: 10s;
+    
+}
+
+.gameIntro > button:hover{
+    background: white;
+    color: black;
+}
+
+.cell.X::before{
+    content: "X";
+    color: white;
+    font-size: 5em;
+    }
+    
+    
+  .cell.O::before{
+    content: "O";
+    color: white;
+    font-size: 5em;
+    }
+  
+
+.win-message{
+    display: none;
+    position: absolute;
+    top: 30%;
+    height: 30%;
+    width: 70%;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    transform: translateX(23%);
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+    padding-left: ;
+
+
+    
+}
+
+.win-message,.p{
+    color: white;
+}
+
+.restart{
+    position: relative;
+    top: 30%;
+    left: 8px;
+    width: 30%;
+    height: 19%;
+    background: red;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.back{
+    display: none;
+    position: relative;
+    margin-top: 10%;
+    left:45%;
+    
+}
+
+.settings{
+    
+    position: relative;
+    top: -79%;
+    left: 60%;
+}
+.settings-modal{
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    background: black;
+    left: 45%;
+    border-radius: 4px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tile-pallete{
+    display: none;
+    position:relative;
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    left: 40px;
+    background:red;
+    top:10px;
+    padding-right: 30px;
+}
+
+.settings-modal,.Tcolor{
+    color: white;
+}
+
+
+@keyframes myAnimation{
+    0%{
+    
+        background: black;
+        color: white;
+        
+    }
+   50%{
+     
+       background: white;
+       color: black;
+   }
+}
