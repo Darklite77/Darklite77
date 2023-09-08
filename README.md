@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Darklite77
 - 👀 I’m interested in web development
-- 🌱 I’m currently learning JavaScript
+- 🌱 I’m currently learning Django
 - 💞️ I’m looking to collaborate on projects
 - 📫 How to reach me WhatsApp 09077635894
 
